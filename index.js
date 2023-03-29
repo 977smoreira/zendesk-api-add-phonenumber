@@ -7,7 +7,6 @@ const client = zendesk.createClient({
   remoteUri: `${process.env.ZENDESK_URL_DE}/api/v2`,
 });
 
-// user dont have phone number
 const userID = 7755761668114;
 
 (async () => {
@@ -39,5 +38,4 @@ const userID = 7755761668114;
   } catch (e) {
     console.error(e);
   }
-  // `text` is not available here
 })();
